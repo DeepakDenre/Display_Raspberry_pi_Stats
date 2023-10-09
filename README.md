@@ -39,6 +39,8 @@ Or
 ```
 ./DisplayStats.py
 ```
+![Display Raspberry pi 4B stats on ST7735 TFT Display](DisplayExample.jpeg)
+
 
 if it works correctly then add the script to crontab to start at boot automatically(Do not use sudo as it runs crontab as superuser):
 ```
