@@ -18,7 +18,7 @@ sudo pip install RPi.GPIO
 sudo pip install Adafruit_GPIO
 ```
 
-instal it by 
+instal the ST7735 Library by 
 ```
 git clone https://github.com/cskau/Python_ST7735.git
 cd Python_ST7735/
