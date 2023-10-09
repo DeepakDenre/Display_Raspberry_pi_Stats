@@ -35,7 +35,7 @@ disp = TFT.ST7735(
         max_speed_hz=SPEED_HZ))
 
 xfont = ImageFont.FreeTypeFont(
-    "/home/deepak/Documents/Project/DisplayStats/Comfortaa.ttf",
+    "Comfortaa.ttf",
     size=12)
 color = {
     "red": (255,0,0),
