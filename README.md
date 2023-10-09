@@ -1,6 +1,6 @@
 # Display_Raspberry_pi_Stats
 ## Displaying Raspberry pi System Stats on TFT Display(SPI)
-## This python Script uses _**cskau's Python_ST7735 Library**_ :
+This python Script uses _**cskau's Python_ST7735 Library**_ :
 https://github.com/cskau/Python_ST7735.git
 
 Connect the **Raspberry Pi 4B** to **TFT ST7735 Display** using Following connection:
