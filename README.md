@@ -9,7 +9,7 @@ Connect the **Raspberry Pi 4B** to **TFT ST7735 Display** using Following connec
 Install essential dependenciesusing
 ```
 sudo apt-get update
-sudo apt-get install build-essential python-dev python-smbus python-pip python-imaging python-numpy
+sudo apt-get install build-essential python3-pip git
 ```
 
 For a Raspberry Pi make sure you have the RPi.GPIO and Adafruit GPIO libraries by executing:
