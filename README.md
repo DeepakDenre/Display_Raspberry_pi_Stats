@@ -14,8 +14,8 @@ sudo apt-get install build-essential python3-pip git
 
 For a Raspberry Pi make sure you have the RPi.GPIO and Adafruit GPIO libraries by executing:
 ```
-sudo pip install RPi.GPIO
-sudo pip install Adafruit_GPIO
+sudo pip3 install RPi.GPIO
+sudo pip3 install Adafruit_GPIO
 ```
 
 instal the ST7735 Library by 
