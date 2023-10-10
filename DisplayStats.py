@@ -7,10 +7,12 @@ import Adafruit_GPIO as GPIO
 import Adafruit_GPIO.SPI as SPI
 import socket
 import psutil
+import os
 from time import sleep
 from datetime import datetime
 
-
+pwd = str(os.path.dirname(__file__))
+print("File directory:"+pwd)
 WIDTH = 130
 HEIGHT = 132
 SPEED_HZ = 15
@@ -23,41 +25,43 @@ SPI_PORT = 0
 SPI_DEVICE = 0
 
 print("Starting DisplayStats.py")
-# Create TFT LCD display class.
-disp = TFT.ST7735(
-    DC,
-    height=HEIGHT,
-    width=WIDTH,
-    rst=RST,
-    spi=SPI.SpiDev(
-        SPI_PORT,
-        SPI_DEVICE,
-        max_speed_hz=SPEED_HZ))
+try:
+    # Create TFT LCD display class.
+    disp = TFT.ST7735(
+        DC,
+        height=HEIGHT,
+        width=WIDTH,
+        rst=RST,
+        spi=SPI.SpiDev(
+            SPI_PORT,
+            SPI_DEVICE,
+            max_speed_hz=SPEED_HZ))
 
-xfont = ImageFont.FreeTypeFont(
-    "Comfortaa.ttf",
-    size=12)
-color = {
-    "red": (255,0,0),
-    "green": (0,255,0),
-    "blue": (0,0,255),
-    "orange": (255,165,0),
-    "white": (255,255,255),
-    "black": (0,0,0)
-}
-now = datetime.now()
+    xfont = ImageFont.FreeTypeFont(
+        pwd+"/Comfortaa.ttf",
+        size=12)
+    color = {
+        "red": (255,0,0),
+        "green": (0,255,0),
+        "blue": (0,0,255),
+        "orange": (255,165,0),
+        "white": (255,255,255),
+        "black": (0,0,0)
+    }
+    now = datetime.now()
 
-# Initialize display.
-disp.begin()
+    # Initialize display.
+    disp.begin()
 
-# Can pass any tuple of red, green, blue values (from 0 to 255 each).
-disp.clear((255, 0, 0))
+    # Can pass any tuple of red, green, blue values (from 0 to 255 each).
+    disp.clear((255, 0, 0))
 
-# disp.clear()
+    # disp.clear()
 
-# Get a PIL Draw object to start drawing on the display buffer.
-draw = disp.draw()
-
+    # Get a PIL Draw object to start drawing on the display buffer.
+    draw = disp.draw()
+except Exception as e:
+    print(e)
 while bug==False:
     try:
         try:
