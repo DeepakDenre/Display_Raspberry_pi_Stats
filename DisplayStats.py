@@ -36,10 +36,12 @@ try:
             SPI_PORT,
             SPI_DEVICE,
             max_speed_hz=SPEED_HZ))
-
-    xfont = ImageFont.FreeTypeFont(
-        pwd+"/Comfortaa.ttf",
-        size=12)
+    try:
+        xfont = ImageFont.FreeTypeFont(
+            pwd+"/Comfortaa.ttf",
+            size=12)
+    except Exception:
+        xfont = ImageFont.load_default()
     color = {
         "red": (255,0,0),
         "green": (0,255,0),
