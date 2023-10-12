@@ -27,8 +27,9 @@ cd Python_ST7735/
 ## Now go outside the Library and clone my repo:
 ```
 cd ../
-git clone https://github.com/DeepakDenre/Display_Raspberry_pi_Stats.git
-cd Display_Raspberry_pi_Stats/
+wget https://github.com/DeepakDenre/Display_Raspberry_pi_Stats/archive/refs/heads/main.zip
+unzip main.zip
+cd Display_Raspberry_pi_Stats-main/
 ```
 
 Test the Python Script using:
