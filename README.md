@@ -9,20 +9,31 @@ Connect the **Raspberry Pi 4B** to **TFT ST7735 Display** using Following connec
 Install essential dependenciesusing
 ```
 sudo apt-get update
+```
+```
 sudo apt-get install build-essential python3-pip git
 ```
 
 For a Raspberry Pi make sure you have the RPi.GPIO, Adafruit GPIO and other libraries by executing:
 ```
 sudo pip3 install RPi.GPIO
+```
+```
 sudo pip3 install Adafruit_GPIO
+```
+```
 sudo pip3 install psutil
 ```
 
-instal the ST7735 Library by 
+install the ST7735 Library by 
 ```
 git clone https://github.com/cskau/Python_ST7735.git
+```
+```
 cd Python_ST7735/
+```
+```
+sudo python3 setup.py install
 ```
 ## Now go outside the Library and clone my repo:
 ```
