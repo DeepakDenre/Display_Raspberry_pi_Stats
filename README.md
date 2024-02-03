@@ -6,7 +6,7 @@ https://github.com/cskau/Python_ST7735.git
 Connect the **Raspberry Pi 4B** to **TFT ST7735 Display** using Following connection:
 ![Connection Of raspberry Pi 4B with TFT ST7735 Display.](Raspberry_RFT_Connection_diagram.png)
 
-Install essential dependenciesusing
+Install essential dependencies
 ```
 sudo apt-get update
 ```
