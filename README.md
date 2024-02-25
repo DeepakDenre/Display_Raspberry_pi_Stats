@@ -24,6 +24,9 @@ sudo pip3 install Adafruit_GPIO
 ```
 sudo pip3 install psutil
 ```
+```
+sudo pip3 install Pillow
+```
 
 install the ST7735 Library by 
 ```
