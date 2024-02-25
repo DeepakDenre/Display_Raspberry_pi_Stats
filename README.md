@@ -37,7 +37,7 @@ sudo python3 setup.py install
 ```
 ## Now go outside the Library and clone my repo:
 ```
-cd ../
+cd ./
 wget https://github.com/DeepakDenre/Display_Raspberry_pi_Stats/archive/refs/heads/main.zip
 unzip main.zip
 cd Display_Raspberry_pi_Stats-main/
